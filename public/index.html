@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Авторизация -->
+        <div id="login-screen">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p id="login-error" class="error"></p>
+        </div>
+
+        <!-- Список задач -->
+        <div id="task-screen" class="hidden">
+            <h1>Task Tracker</h1>
+            <input type="text" id="new-task" placeholder="New Task">
+            <button id="add-task-btn">Add Task</button>
+            <ul id="task-list">
+            </ul>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
